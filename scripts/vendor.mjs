@@ -49,6 +49,16 @@ for (const name of packages) {
       break;
     } catch {}
   }
+  // Some packages ship additional license texts (DOMPurify: LICENSE-MPL).
+  for (const filename of ["LICENSE-MPL", "LICENSE-APACHE"]) {
+    try {
+      license +=
+        "\n" +
+        "-".repeat(77) +
+        "\n" +
+        (await readFile("node_modules/" + name + "/" + filename, "utf8"));
+    } catch {}
+  }
   notices.push(
     name + " " + meta.version + "\nLicense: " + meta.license + "\n" + license,
   );
