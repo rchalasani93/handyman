@@ -222,9 +222,10 @@ function createContext(root, helpers) {
       sizeLabel.textContent = `(${size(blob.size)})`;
       label.append(`Ready! ${name} `, sizeLabel);
       link.className = "result-download";
-      // Object URLs are always blob: URLs; refuse anything else so the link
-      // can never become a javascript: URL.
+      // Object URLs are always blob: URLs with no HTML metacharacters; refuse
+      // anything else so the link can never become script or markup.
       if (!url.startsWith("blob:")) throw new Error("Unexpected download URL");
+      if (/["'&<>\s]/.test(url)) throw new Error("Unexpected download URL");
       link.href = url;
       link.download = name;
       link.insertAdjacentHTML("afterbegin", icon("download"));
