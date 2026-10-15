@@ -1,0 +1,10 @@
+name: "Handy CodeQL config"
+
+# Scan first-party code only. dist/vendor/ holds unmodified, minified
+# third-party bundles (pdf.js, docx, DOMPurify, etc.) copied from npm by
+# scripts/vendor.mjs; their security is tracked by Dependabot instead.
+paths-ignore:
+  - dist/vendor
+  - _site
+  - node_modules
+  - test-results

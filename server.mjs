@@ -1,5 +1,5 @@
 import http from "node:http";
-import { readFile, stat } from "node:fs/promises";
+import { open } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 const types = {
@@ -13,6 +13,19 @@ const types = {
   ".png": "image/png",
   ".json": "application/json",
 };
+// Returns an open handle for a regular file, or null for a directory.
+async function openFile(file) {
+  let handle;
+  try {
+    handle = await open(file, "r");
+  } catch (error) {
+    if (error.code === "EISDIR") return null; // Windows refuses to open folders.
+    throw error;
+  }
+  if ((await handle.stat()).isFile()) return handle;
+  await handle.close();
+  return null;
+}
 export function createStaticServer({
   directory = "dist",
   basePath = "/",
@@ -38,9 +51,20 @@ export function createStaticServer({
         res.writeHead(403).end();
         return;
       }
-      if ((await stat(file)).isDirectory())
+      // Open once and stat/read through the same handle to avoid a
+      // check-then-use race between separate stat() and readFile() calls.
+      let handle = await openFile(file);
+      if (!handle) {
         file = path.join(file, "index.html");
-      const body = await readFile(file);
+        handle = await openFile(file);
+        if (!handle) throw new Error("Not a file");
+      }
+      let body;
+      try {
+        body = await handle.readFile();
+      } finally {
+        await handle.close().catch(() => {});
+      }
       res.writeHead(200, {
         "Content-Type": types[path.extname(file)] || "application/octet-stream",
         "Cache-Control": "no-cache",

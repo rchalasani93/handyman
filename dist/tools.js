@@ -215,7 +215,23 @@ function createContext(root, helpers) {
         el.className = "tool-result";
         root.append(el);
       }
-      el.innerHTML = `${icon("check")}<span>Ready! ${esc(name)} <small>(${size(blob.size)})</small></span><a class="result-download" href="${url}" download="${esc(name)}">${icon("download")}Download</a>`;
+      // Build with DOM APIs so the file name and URL are never parsed as HTML.
+      const label = document.createElement("span"),
+        sizeLabel = document.createElement("small"),
+        link = document.createElement("a");
+      sizeLabel.textContent = `(${size(blob.size)})`;
+      label.append(`Ready! ${name} `, sizeLabel);
+      link.className = "result-download";
+      // Object URLs are always blob: URLs; refuse anything else so the link
+      // can never become a javascript: URL.
+      if (!url.startsWith("blob:")) throw new Error("Unexpected download URL");
+      link.href = url;
+      link.download = name;
+      link.insertAdjacentHTML("afterbegin", icon("download"));
+      link.append("Download");
+      el.replaceChildren();
+      el.insertAdjacentHTML("afterbegin", icon("check"));
+      el.append(label, link);
       el.style.display = "flex";
       el.style.gap = "9px";
       el.style.alignItems = "center";
