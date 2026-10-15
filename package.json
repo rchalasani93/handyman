@@ -22,6 +22,6 @@
     "docx": "9.5.1",
     "dompurify": "3.3.0",
     "qrcode-generator": "2.0.4",
-    "fflate": "0.8.2"
+    "fflate": "0.8.3"
   }
 }
