@@ -1,0 +1,27 @@
+{
+  "name": "handy-toolbox",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node scripts/build.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "check": "node --check dist/app.js && node --check dist/tools.js && node --check dist/icons.js && node --check server.mjs && node --check scripts/build.mjs",
+    "test": "node scripts/fixtures.mjs && node scripts/check.mjs",
+    "test:deploy": "node --test tests/deployment.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "4.10.38",
+    "@pdf-lib/fontkit": "1.1.1",
+    "mammoth": "1.11.0",
+    "docx": "9.5.1",
+    "dompurify": "3.3.0",
+    "qrcode-generator": "2.0.4",
+    "fflate": "0.8.2"
+  }
+}

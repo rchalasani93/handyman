@@ -1,0 +1,7 @@
+node_modules/
+_site/
+test-results/
+*.tar.gz
+.sites-runtime/
+# Local checkout used by the existing ChatGPT Site publisher, not a submodule.
+sites/

@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7860db" />
+    <meta
+      name="description"
+      content="A little help for your everyday. Free PDF, image, document, and everyday tools, together in one private browser workspace."
+    />
+    <title>Handy — Your everyday toolbox</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to tools</a>
+    <div class="mobile-scrim" id="mobile-scrim"></div>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Handy home"
+        ><span class="brand-symbol"><i></i><i></i><i></i><i></i></span
+        >handy<span class="brand-dot">.</span></a
+      >
+      <div class="workspace-label">YOUR EVERYDAY TOOLBOX</div>
+      <nav aria-label="Main navigation" id="main-nav"></nav>
+      <div class="nav-label category-label">THE TOOLBOX</div>
+      <nav aria-label="Tool categories" id="category-nav"></nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-card">
+          <span data-icon="shield"></span
+          ><strong>Your files, just yours.</strong>
+          <p>What happens in your browser<br />stays in your browser.</p>
+          <button id="privacy-link">
+            A little peace of mind <span>↗</span>
+          </button>
+        </div>
+        <button class="sidebar-help" id="whats-new">
+          <span data-icon="sparkles"></span> What's new
+          <span class="new-dot"></span>
+        </button>
+        <div class="sidebar-footer">
+          Made for the little things. <span>✳</span>
+        </div>
+      </div>
+    </aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <button
+          class="icon-button mobile-menu"
+          id="mobile-menu"
+          aria-label="Open navigation"
+        >
+          <span data-icon="menu"></span>
+        </button>
+        <div class="breadcrumb">
+          <span data-icon="grid"></span
+          ><span id="breadcrumb-title">All tools</span>
+        </div>
+        <div class="topbar-actions">
+          <span class="local-pill"><i></i> A little more productive</span
+          ><button
+            class="icon-button"
+            id="help-button"
+            aria-label="How Handy works"
+          >
+            <span data-icon="help"></span>
+          </button>
+          <div class="avatar" aria-label="Your personal workspace">
+            H<span></span>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <section class="page-intro">
+          <div>
+            <div class="eyebrow">LESS FRICTION. MORE LIVING.</div>
+            <h1>Your everyday, simplified<span>.</span></h1>
+            <p>Little tasks. Big plans. There’s a tool for that.</p>
+          </div>
+          <div class="intro-doodle" aria-hidden="true">✳</div>
+        </section>
+        <section class="hero" id="hero">
+          <div class="hero-copy">
+            <span class="hero-kicker"
+              ><span>✦</span> ONE SPACE. SO MANY POSSIBILITIES.</span
+            >
+            <h2>A little help.<br />A lot less hassle.</h2>
+            <p>
+              Edit a PDF. Fix a photo. Make something happen.<br />All your
+              go-to tools, finally in one place.
+            </p>
+            <a href="#tool-section" class="primary-button"
+              >Find your tool <span data-icon="arrow-down"></span></a
+            ><span class="hero-note"
+              ><span data-icon="check"></span> Free to use <i>·</i> No sign-up
+              needed</span
+            >
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg
+              viewBox="0 0 440 295"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <filter
+                  id="shadow"
+                  x="-50%"
+                  y="-50%"
+                  width="200%"
+                  height="200%"
+                >
+                  <feDropShadow
+                    dx="0"
+                    dy="12"
+                    stdDeviation="12"
+                    flood-color="#554296"
+                    flood-opacity=".11"
+                  />
+                </filter>
+                <linearGradient id="paper" x1="0" y1="0" x2="150" y2="200">
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#F8F6FF" />
+                </linearGradient>
+                <linearGradient id="pic" x1="0" y1="0" x2="160" y2="100">
+                  <stop stop-color="#DCF0DF" />
+                  <stop offset="1" stop-color="#B6DCCB" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="236"
+                cy="150"
+                r="117"
+                stroke="#D5CAEE"
+                stroke-dasharray="4 7"
+              />
+              <circle
+                cx="236"
+                cy="150"
+                r="94"
+                fill="#E6DEF7"
+                fill-opacity=".6"
+              />
+              <g
+                transform="translate(125 31) rotate(-12 80 105)"
+                filter="url(#shadow)"
+              >
+                <rect width="139" height="185" rx="12" fill="url(#paper)" />
+                <path d="M108 0v23a8 8 0 008 8h23" fill="#E6DEF5" />
+                <rect
+                  x="20"
+                  y="24"
+                  width="38"
+                  height="41"
+                  rx="8"
+                  fill="#FFE1DE"
+                />
+                <path
+                  d="M32 44h12m-6-12v24m-8-5 8 5 9-5"
+                  stroke="#DE8178"
+                  stroke-width="2.3"
+                  stroke-linecap="round"
+                />
+                <text
+                  x="21"
+                  y="94"
+                  fill="#4D425F"
+                  font-size="17"
+                  font-family="Arial,sans-serif"
+                  font-weight="700"
+                >
+                  Big ideas.pdf
+                </text>
+                <rect
+                  x="21"
+                  y="107"
+                  width="96"
+                  height="5"
+                  rx="2.5"
+                  fill="#D8D2E4"
+                />
+                <rect
+                  x="21"
+                  y="119"
+                  width="83"
+                  height="5"
+                  rx="2.5"
+                  fill="#E7E2EE"
+                />
+                <rect
+                  x="21"
+                  y="131"
+                  width="91"
+                  height="5"
+                  rx="2.5"
+                  fill="#E7E2EE"
+                />
+                <rect
+                  x="21"
+                  y="153"
+                  width="50"
+                  height="12"
+                  rx="6"
+                  fill="#EAE4F5"
+                />
+              </g>
+              <g
+                transform="translate(222 85) rotate(10 78 65)"
+                filter="url(#shadow)"
+              >
+                <rect width="153" height="130" rx="12" fill="white" />
+                <rect
+                  x="9"
+                  y="9"
+                  width="135"
+                  height="92"
+                  rx="6"
+                  fill="url(#pic)"
+                />
+                <circle cx="116" cy="31" r="12" fill="#FFF1BE" />
+                <path d="M9 87 53 35 91 82 110 60 144 94v7H9Z" fill="#80B8A2" />
+                <path d="m9 87 44-52 22 27-22-9-14 17-11-4Z" fill="#F3F8E9" />
+                <rect
+                  x="15"
+                  y="112"
+                  width="66"
+                  height="4"
+                  rx="2"
+                  fill="#D6D1E3"
+                />
+                <rect
+                  x="116"
+                  y="110"
+                  width="22"
+                  height="7"
+                  rx="3.5"
+                  fill="#D9EADC"
+                />
+              </g>
+              <g
+                transform="translate(96 192) rotate(-6 37 32)"
+                filter="url(#shadow)"
+              >
+                <rect width="70" height="64" rx="15" fill="#F9DCA8" />
+                <path
+                  d="m23 23 9-6 14 5 1 17-15 8-11-7 2-17Z"
+                  stroke="#A87B38"
+                  stroke-width="2.3"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="m23 23 12 6 11-7m-11 7-3 18"
+                  stroke="#A87B38"
+                  stroke-width="2.3"
+                />
+              </g>
+              <g
+                transform="translate(332 38) rotate(12 25 25)"
+                filter="url(#shadow)"
+              >
+                <rect width="53" height="53" rx="14" fill="#8270CB" />
+                <path
+                  d="m16 18 5 17 5-13 5 13 5-17"
+                  stroke="white"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <circle
+                cx="333"
+                cy="237"
+                r="19"
+                fill="white"
+                filter="url(#shadow)"
+              />
+              <path
+                d="m325 237 5 5 11-11"
+                stroke="#70A88C"
+                stroke-width="2.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="m98 75 4-11 4 11 11 4-11 4-4 11-4-11-11-4 11-4Z"
+                fill="#9C88CC"
+              />
+              <path
+                d="m371 178 3-8 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"
+                fill="#A691D5"
+              />
+              <circle cx="192" cy="257" r="4" fill="#B29FD8" />
+              <circle cx="300" cy="19" r="3" fill="#B29FD8" />
+              <path
+                d="m57 161 20-9m-7-13 9 8m-19 30 19-13"
+                stroke="#B49ED9"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <div class="art-tag"><span>✦</span> Consider it handled.</div>
+          </div>
+        </section>
+        <div class="benefits" id="benefits">
+          <span><span data-icon="shield-check"></span>Private by design</span
+          ><span><span data-icon="zap"></span>Ready when you are</span
+          ><span><span data-icon="heart"></span>No downloads. No fuss.</span
+          ><span class="benefits-last"
+            ><span class="mini-brand">✳</span> A handy little collection.</span
+          >
+        </div>
+        <section class="tool-section" id="tool-section">
+          <div class="section-heading">
+            <div>
+              <h2 id="section-title">Find your next little lifesaver</h2>
+              <p id="section-description">
+                The right tool is closer than you think.
+              </p>
+            </div>
+            <div class="view-controls">
+              <button
+                class="icon-button active"
+                id="grid-view"
+                title="Grid view"
+                aria-label="Grid view"
+                aria-pressed="true"
+              >
+                <span data-icon="grid"></span></button
+              ><button
+                class="icon-button"
+                id="list-view"
+                title="List view"
+                aria-label="List view"
+                aria-pressed="false"
+              >
+                <span data-icon="list"></span>
+              </button>
+            </div>
+          </div>
+          <div class="search-row">
+            <label class="search-box"
+              ><span data-icon="search"></span
+              ><input
+                type="search"
+                id="tool-search"
+                placeholder="What do you need a hand with?"
+                autocomplete="off"
+                aria-label="Search tools"
+              /><kbd>Ctrl K</kbd></label
+            ><button
+              class="sort-button"
+              id="sort-button"
+              title="Toggle between recommended and alphabetical order"
+            >
+              <span data-icon="sort"></span
+              ><span id="sort-label">Recommended</span
+              ><span data-icon="chevron-down"></span>
+            </button>
+          </div>
+          <div
+            class="filter-row"
+            id="filters"
+            role="group"
+            aria-label="Filter tools by category"
+          ></div>
+          <div class="results-heading">
+            <span id="results-label">A few favorites to get you started</span
+            ><span id="results-count"></span>
+          </div>
+          <div class="tools-grid" id="tools-grid" aria-live="polite"></div>
+          <div class="show-more-wrap">
+            <button class="secondary-button" id="show-more">
+              Explore all tools <span data-icon="arrow-right"></span>
+            </button>
+          </div>
+        </section>
+        <section class="bottom-banner" id="bottom-banner">
+          <div class="bottom-banner-icon">
+            <span data-icon="sparkles"></span>
+          </div>
+          <div>
+            <h3>Less tab-hopping. More getting things done.</h3>
+            <p>
+              A whole toolbox in your browser. Nothing to install, everything to
+              explore.
+            </p>
+          </div>
+          <span class="banner-flower" aria-hidden="true">✳</span>
+        </section>
+        <footer class="page-footer">
+          <span>A little help goes a long way.</span>
+          <div>
+            <button id="footer-privacy">Privacy, always</button
+            ><span
+              >Made with a little care <span class="footer-heart">♡</span></span
+            >
+          </div>
+        </footer>
+      </main>
+    </div>
+    <dialog
+      id="tool-dialog"
+      class="tool-dialog"
+      aria-labelledby="tool-dialog-title"
+    >
+      <header class="dialog-header">
+        <div class="dialog-title-group">
+          <span class="tool-icon" id="dialog-icon"></span>
+          <div>
+            <h2 id="tool-dialog-title"></h2>
+            <p id="tool-dialog-description"></p>
+          </div>
+        </div>
+        <button class="icon-button" id="close-tool" aria-label="Close tool">
+          <span data-icon="close"></span>
+        </button>
+      </header>
+      <div class="dialog-body" id="tool-body"></div>
+      <footer class="dialog-footer">
+        <span
+          ><span data-icon="lock"></span> Your files stay on your device</span
+        ><span id="tool-status" role="status"></span>
+      </footer>
+    </dialog>
+    <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title">
+      <button class="icon-button info-close" id="close-info" aria-label="Close">
+        <span data-icon="close"></span>
+      </button>
+      <div id="info-content"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
