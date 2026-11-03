@@ -7,28 +7,28 @@ export const categories = {
     short: "PDF",
     icon: "pdf",
     description:
-      "A fresh start for your paperwork. Merge, split, convert, and annotate.",
+      "Merge, split, rotate, number and annotate PDFs, or convert them to images and text.",
   },
   images: {
     name: "Image tools",
     short: "Images",
     icon: "image",
     description:
-      "Give your images the right size, format, and finishing touch.",
+      "Resize, crop, compress, convert and adjust JPG, PNG and WebP images.",
   },
   documents: {
     name: "Document tools",
     short: "Documents",
     icon: "document",
     description:
-      "From a blank page to a finished document. Make words work for you.",
+      "Write and convert .docx files, and turn plain text into a PDF.",
   },
   everyday: {
     name: "Everyday tools",
     short: "Everyday",
     icon: "shapes",
     description:
-      "Small, useful things that make a surprisingly big difference.",
+      "Text, JSON, encoding, unit, color and time utilities.",
   },
 };
 export const catalog = [
@@ -37,8 +37,7 @@ export const catalog = [
     name: "Merge PDF",
     category: "pdf",
     icon: "merge",
-    description: "Bring your PDFs together in one tidy document.",
-    badge: "Popular",
+    description: "Combine several PDFs into one file, in the order you choose.",
     keywords: "combine join files",
   },
   {
@@ -46,7 +45,7 @@ export const catalog = [
     name: "Split PDF",
     category: "pdf",
     icon: "split",
-    description: "Keep the pages you need. Leave the rest behind.",
+    description: "Extract a page range, or save every page as its own PDF.",
     keywords: "separate extract separator pages",
   },
   {
@@ -54,8 +53,7 @@ export const catalog = [
     name: "Resize image",
     category: "images",
     icon: "resize",
-    description: "The perfect fit, whatever the destination.",
-    badge: "Popular",
+    description: "Set exact pixel dimensions or scale by percentage.",
     keywords: "size dimensions photo picture pixels",
   },
   {
@@ -63,8 +61,7 @@ export const catalog = [
     name: "Word editor",
     category: "documents",
     icon: "document",
-    description: "A fresh page for your next bright idea.",
-    badge: "New",
+    description: "Write a document and download it as .docx.",
     keywords: "docx write word edit text document",
   },
   {
@@ -72,7 +69,7 @@ export const catalog = [
     name: "Edit PDF",
     category: "pdf",
     icon: "edit",
-    description: "Add a note, a name, or that final little detail.",
+    description: "Place text on any page of an existing PDF.",
     keywords: "annotate text annotation editor",
   },
   {
@@ -80,7 +77,7 @@ export const catalog = [
     name: "Compress image",
     category: "images",
     icon: "compress",
-    description: "Less file size. Just as much good stuff.",
+    description: "Shrink JPG and WebP files by adjusting quality.",
     keywords: "photo smaller reduce optimize jpeg jpg webp quality",
   },
   {
@@ -88,7 +85,7 @@ export const catalog = [
     name: "Convert image",
     category: "images",
     icon: "convert",
-    description: "JPG, PNG, or WebP. A change of format made easy.",
+    description: "Convert between JPG, PNG and WebP.",
     keywords: "converter photo picture jpeg",
   },
   {
@@ -96,7 +93,7 @@ export const catalog = [
     name: "QR code generator",
     category: "everyday",
     icon: "qr",
-    description: "Turn a link into a little square of possibility.",
+    description: "Make a QR code from a link or text and save it as PNG.",
     keywords: "url barcode website wifi",
   },
   {
@@ -104,7 +101,7 @@ export const catalog = [
     name: "Images to PDF",
     category: "pdf",
     icon: "image",
-    description: "Give your photos a home in a single PDF.",
+    description: "Put one or more images into a PDF, one per page.",
     keywords: "jpg jpeg png webp photo convert converter",
   },
   {
@@ -112,7 +109,7 @@ export const catalog = [
     name: "PDF to images",
     category: "pdf",
     icon: "convert",
-    description: "Turn each page into a shareable PNG or JPG.",
+    description: "Save each PDF page as a PNG or JPG.",
     keywords: "convert converter png jpeg jpg photo",
   },
   {
@@ -120,7 +117,7 @@ export const catalog = [
     name: "Rotate PDF",
     category: "pdf",
     icon: "rotate",
-    description: "Get every page looking the right way up.",
+    description: "Rotate all pages or selected pages by 90° steps.",
     keywords: "orientation turn flip",
   },
   {
@@ -128,7 +125,7 @@ export const catalog = [
     name: "PDF to text",
     category: "pdf",
     icon: "text",
-    description: "Take the words off the page and put them to work.",
+    description: "Copy the text layer out of a PDF. Scanned pages need OCR first.",
     keywords: "extract copy convert converter",
   },
   {
@@ -136,7 +133,7 @@ export const catalog = [
     name: "Add page numbers",
     category: "pdf",
     icon: "number",
-    description: "A little order for your longer documents.",
+    description: "Stamp page numbers on a PDF, with position and start number.",
     keywords: "numbering footer pagination",
   },
   {
@@ -144,7 +141,7 @@ export const catalog = [
     name: "Crop image",
     category: "images",
     icon: "crop",
-    description: "Find the good part. Make it the whole picture.",
+    description: "Crop to a free area or a fixed aspect ratio.",
     keywords: "photo trim cut picture aspect ratio",
   },
   {
@@ -152,7 +149,7 @@ export const catalog = [
     name: "Photo editor",
     category: "images",
     icon: "palette",
-    description: "A little brighter, warmer, or more you.",
+    description: "Adjust brightness, contrast, saturation and warmth.",
     keywords:
       "image photo edit filters brightness contrast saturation grayscale",
   },
@@ -161,7 +158,7 @@ export const catalog = [
     name: "Rotate & flip image",
     category: "images",
     icon: "rotate",
-    description: "A fresh perspective in just a click.",
+    description: "Rotate 90° or flip horizontally and vertically.",
     keywords: "photo orientation mirror turn picture",
   },
   {
@@ -169,7 +166,7 @@ export const catalog = [
     name: "Word to text",
     category: "documents",
     icon: "text",
-    description: "Just the words, ready for whatever’s next.",
+    description: "Extract the plain text from a .docx file.",
     keywords: "docx document convert converter txt",
   },
   {
@@ -177,7 +174,7 @@ export const catalog = [
     name: "Word to HTML",
     category: "documents",
     icon: "code",
-    description: "From your document to something web-ready.",
+    description: "Convert a .docx file to clean HTML.",
     keywords: "docx document convert converter website",
   },
   {
@@ -185,7 +182,7 @@ export const catalog = [
     name: "Text to PDF",
     category: "documents",
     icon: "pdf",
-    description: "Turn your words into a neatly wrapped PDF.",
+    description: "Type or paste text and download it as a PDF.",
     keywords: "convert converter document export txt",
   },
   {
@@ -193,7 +190,7 @@ export const catalog = [
     name: "Word counter",
     category: "everyday",
     icon: "text",
-    description: "Every word, character, and minute accounted for.",
+    description: "Count words, characters, sentences and reading time.",
     keywords: "count letters reading time paragraphs sentences",
   },
   {
@@ -201,7 +198,7 @@ export const catalog = [
     name: "Text case converter",
     category: "everyday",
     icon: "text",
-    description: "UPPER, lower, and everything in between.",
+    description: "Switch text between UPPER, lower, Title and other cases.",
     keywords: "uppercase lowercase title sentence capital letters",
   },
   {
@@ -209,7 +206,7 @@ export const catalog = [
     name: "JSON formatter",
     category: "everyday",
     icon: "code",
-    description: "Untangle your JSON. Make it nice and readable.",
+    description: "Validate, pretty-print or minify JSON.",
     keywords: "validate pretty minify code developer",
   },
   {
@@ -217,7 +214,7 @@ export const catalog = [
     name: "Password generator",
     category: "everyday",
     icon: "key",
-    description: "Make a strong, random password in a moment.",
+    description: "Generate random passwords with the length and characters you pick.",
     keywords: "secure random secret passphrase",
   },
   {
@@ -225,7 +222,7 @@ export const catalog = [
     name: "Unit converter",
     category: "everyday",
     icon: "ruler",
-    description: "Miles to kilometers. A whole world made simpler.",
+    description: "Convert length, weight, temperature, volume and more.",
     keywords: "length weight temperature volume area mass celsius fahrenheit",
   },
   {
@@ -233,7 +230,7 @@ export const catalog = [
     name: "Color picker",
     category: "everyday",
     icon: "palette",
-    description: "Find your shade. Copy it in the format you need.",
+    description: "Pick a color and copy it as HEX, RGB or HSL.",
     keywords: "hex rgb hsl colour palette",
   },
   {
@@ -241,7 +238,7 @@ export const catalog = [
     name: "Base64 encoder",
     category: "everyday",
     icon: "code",
-    description: "Encode a little text. Decode a little mystery.",
+    description: "Encode text to Base64 or decode it back.",
     keywords: "decode developer unicode",
   },
   {
@@ -249,7 +246,7 @@ export const catalog = [
     name: "URL encoder",
     category: "everyday",
     icon: "link",
-    description: "Make your text ready for its next link.",
+    description: "Percent-encode or decode text for use in URLs.",
     keywords: "decode percent encode uri developer",
   },
   {
@@ -257,7 +254,7 @@ export const catalog = [
     name: "Timestamp converter",
     category: "everyday",
     icon: "clock",
-    description: "Make a Unix timestamp a little more human.",
+    description: "Convert Unix timestamps to dates and back.",
     keywords: "date time epoch milliseconds seconds",
   },
 ];
@@ -353,37 +350,37 @@ function renderCards() {
       category === "favorites" && !query
         ? [
             "star",
-            "A place for your go-to tools",
-            "Tap the star on any tool to keep it close.",
+            "No favorites yet",
+            "Star a tool to pin it here.",
           ]
         : category === "recent" && !query
           ? [
               "clock",
-              "Your next little task starts here",
-              "Tools you open will appear here for an easy return.",
+              "Nothing opened yet",
+              "Tools you open will be listed here.",
             ]
           : [
               "search",
-              "No tools found just yet",
+              "No matching tools",
               "Try “PDF”, “resize”, “Word”, or a shorter search.",
             ];
     $("#tools-grid").innerHTML =
-      `<div class="empty-state">${icon(empty[0])}<h3>${empty[1]}</h3><p>${empty[2]}</p><button class="secondary-button" id="reset-search">Explore the toolbox ${icon("arrow-right")}</button></div>`;
+      `<div class="empty-state">${icon(empty[0])}<h3>${empty[1]}</h3><p>${empty[2]}</p><button class="secondary-button" id="reset-search">Show all tools</button></div>`;
   }
   $("#results-count").textContent =
     `${tools.length} ${tools.length === 1 ? "tool" : "tools"}${limited ? " of " + count : ""}`;
   $("#results-label").textContent = query
     ? `Results for “${$("#tool-search").value.trim()}”`
     : category === "favorites"
-      ? "Your tools, always within reach"
+      ? "Favorites"
       : category === "recent"
-        ? "A shortcut to where you left off"
+        ? "Recently used"
         : limited
-          ? "A few favorites to get you started"
-          : "A little help for whatever’s next";
+          ? "Most used"
+          : "All tools";
   $("#show-more").hidden = !limited;
   $("#show-more").innerHTML =
-    `Explore all ${catalog.length} tools ${icon("arrow-right")}`;
+    `Show all ${catalog.length} tools`;
 }
 function selectCategory(key) {
   category = key;
@@ -396,16 +393,16 @@ function selectCategory(key) {
   $("#section-title").textContent =
     categories[key]?.name ||
     {
-      all: "Find your next little lifesaver",
-      favorites: "Your kind of handy",
-      recent: "Right where you left off",
+      all: "All tools",
+      favorites: "Favorites",
+      recent: "Recently used",
     }[key];
   $("#section-description").textContent =
     categories[key]?.description ||
     {
-      all: "The right tool is closer than you think.",
-      favorites: "The tools you love, with a little less searching.",
-      recent: "Good to see you again. Let’s keep things moving.",
+      all: `${catalog.length} tools in four categories.`,
+      favorites: "Tools you starred. Saved in this browser only.",
+      recent: "The last 12 tools you opened on this device.",
     }[key];
   renderNav();
   renderCards();
@@ -419,9 +416,9 @@ function closeMenu() {
 }
 function showInfo(kind) {
   const content = {
-    privacy: `<div class="info-symbol">${icon("shield-check")}</div><h2 id="info-title">Your files, just yours.</h2><p>Your PDFs, photos, and documents are processed <strong>right here in your browser</strong>. Handy doesn’t send your file contents to a server.</p><p>Favorites and recently used tool names are saved on this device. Your uploaded files aren’t saved by Handy. Close a tool to clear its current workspace.</p><p class="info-detail">Handy loads its fonts from Google Fonts. Document conversion focuses on content; complex layouts may change. Use smaller files if your browser is running low on memory.</p>`,
-    help: `<div class="info-symbol">✳</div><h2 id="info-title">A little help, right here.</h2><p><strong>1. Find your tool.</strong><br>Browse a category or search for what you need. Press Ctrl K (or ⌘ K on Mac) to jump to search.</p><p><strong>2. Make it yours.</strong><br>Drop in a file or start typing. Adjust the options, then download your result.</p><p><strong>3. Keep the good ones close.</strong><br>Tap a star to save a favorite. Recently used tools remember where you’ve been.</p><p class="info-detail">All ${catalog.length} tools work in your browser. Word tools support modern .docx files. PDF editing adds text annotations; it doesn’t replace existing text. Scanned PDFs need OCR before text extraction.</p>`,
-    new: `<div class="info-symbol">✦</div><h2 id="info-title">Meet your everyday toolbox.</h2><p><strong>${catalog.length} little ways to get things done.</strong><br>PDFs, images, documents, and the everyday tasks in between.</p><p>Start with the Word editor, add text to a PDF, or give a photo a fresh look. Pin your favorites and make this space feel like yours.</p><p class="info-detail">A calm workspace. Private file processing. No sign-up to use the tools.</p>`,
+    privacy: `<div class="info-symbol">${icon("shield-check")}</div><h2 id="info-title">Privacy</h2><p>Your PDFs, photos, and documents are processed <strong>right here in your browser</strong>. Handy doesn’t send your file contents to a server.</p><p>Favorites and recently used tool names are saved on this device. Your uploaded files aren’t saved by Handy. Close a tool to clear its current workspace.</p><p class="info-detail">Handy makes no network requests while you use a tool. Document conversion focuses on content; complex layouts may change. Use smaller files if your browser is running low on memory.</p>`,
+    help: `<h2 id="info-title">How it works</h2><p><strong>1. Find your tool.</strong><br>Browse a category or search for what you need. Press Ctrl K (or ⌘ K on Mac) to jump to search.</p><p><strong>2. Add your file.</strong><br>Drop in a file or start typing. Adjust the options, then download your result.</p><p><strong>3. Pin what you use.</strong><br>Star a tool to add it to Favorites. Recently used keeps your last 12.</p><p class="info-detail">All ${catalog.length} tools work in your browser. Word tools support modern .docx files. PDF editing adds text annotations; it doesn’t replace existing text. Scanned PDFs need OCR before text extraction.</p>`,
+    new: `<h2 id="info-title">Changelog</h2><p><strong>${catalog.length} tools.</strong> Added the Word editor, PDF text annotations and the photo editor.</p><p>The full history is in the <a href="https://github.com/rchalasani93/handyman/commits/main">commit log</a>.</p>`,
   };
   $("#info-content").innerHTML = content[kind];
   $("#info-dialog").showModal();

@@ -55,7 +55,7 @@ test("Pages subpath serves the app, lazy libraries, PDF worker, and font", async
   const response = await fetch(page);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Handy — Your everyday toolbox/);
+  assert.match(html, /<title>Handy: PDF, image and text tools/);
   const assets = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)].map(
     (match) => match[1],
   );

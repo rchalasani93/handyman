@@ -1,23 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap");
 :root {
-  --bg: #f8f9fb;
-  --surface: #fff;
-  --ink: #292b3b;
-  --muted: #858594;
-  --purple: #7860d5;
-  --purple-dark: #6650bd;
-  --purple-light: #f0ecfa;
-  --line: #ececf1;
-  --font: "DM Sans", sans-serif;
-  --heading: "Manrope", sans-serif;
-  --pdf: #d77670;
-  --pdf-bg: #fcf0ee;
-  --images: #5a9c82;
-  --images-bg: #eaf5ef;
-  --documents: #6489c3;
-  --documents-bg: #edf2fc;
-  --everyday: #ad8b51;
-  --everyday-bg: #fbf4e6;
+  --bg: #f5f3ee;
+  --surface: #fffefb;
+  --ink: #23211e;
+  --muted: #6f6a62;
+  --purple: #b3471f;
+  --purple-dark: #8f3716;
+  --purple-light: #f3e9e2;
+  --line: #e4e0d8;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --heading: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+  --pdf: var(--ink);
+  --pdf-bg: transparent;
+  --images: var(--ink);
+  --images-bg: transparent;
+  --documents: var(--ink);
+  --documents-bg: transparent;
+  --everyday: var(--ink);
+  --everyday-bg: transparent;
 }
 * {
   box-sizing: border-box;
@@ -71,13 +70,13 @@ button:disabled {
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #b4a3ed;
+  outline: 3px solid #cfcac1;
   outline-offset: 4px;
 }
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #b5a4ed;
+  outline: 2px solid #cfcac2;
   outline-offset: 1px;
 }
 button svg {
@@ -108,7 +107,7 @@ h3 {
   padding: 12px 20px;
   z-index: 100;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .skip-link:focus {
   top: 10px;
@@ -173,7 +172,7 @@ h3 {
   font-size: 13px;
   font-weight: 500;
   color: #777786;
-  border-radius: 7px;
+  border-radius: 3px;
   text-align: left;
   margin-bottom: 5px;
   transition:
@@ -185,7 +184,7 @@ h3 {
   height: 18px;
 }
 .nav-item:hover {
-  background: #f7f5fb;
+  background: #f9f8f7;
   color: var(--purple);
 }
 .nav-item.active {
@@ -201,7 +200,7 @@ h3 {
 }
 .nav-item.active .nav-count {
   color: var(--purple);
-  background: #e6def8;
+  background: #eeece9;
   padding: 2px 5px;
   border-radius: 4px;
 }
@@ -218,14 +217,14 @@ h3 {
   padding-top: 34px;
 }
 .privacy-card {
-  background: #f8f8fb;
-  border: 1px solid #efedf4;
-  border-radius: 10px;
+  background: #fafaf9;
+  border: 1px solid #f2f1ef;
+  border-radius: 4px;
   padding: 17px 15px;
 }
 .privacy-card > span {
   display: block;
-  color: #9c8dc9;
+  color: #ba522c;
   margin-bottom: 11px;
 }
 .privacy-card > span .icon {
@@ -246,7 +245,7 @@ h3 {
 }
 .privacy-card button {
   font-size: 9.5px;
-  color: #82739f;
+  color: #948c7e;
   padding: 12px 0 0;
 }
 .privacy-card button span {
@@ -269,7 +268,7 @@ h3 {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #a997d6;
+  background: #ba522c;
   margin-left: auto;
 }
 .sidebar-footer {
@@ -283,7 +282,7 @@ h3 {
 }
 .sidebar-footer > span {
   font-size: 18px;
-  color: #b9add3;
+  color: #c8c2b8;
 }
 .app-shell {
   margin-left: 232px;
@@ -307,7 +306,7 @@ h3 {
 .breadcrumb .icon {
   width: 16px;
   height: 16px;
-  color: #9592a3;
+  color: #9f9c96;
 }
 .topbar-actions {
   display: flex;
@@ -330,11 +329,11 @@ h3 {
 .icon-button {
   width: 33px;
   height: 33px;
-  border-radius: 7px;
+  border-radius: 3px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #9995a6;
+  color: #a29f99;
   transition: 0.18s;
 }
 .icon-button:hover {
@@ -349,14 +348,14 @@ h3 {
   position: relative;
   width: 31px;
   height: 31px;
-  background: #eee7f8;
+  background: #f1f0ee;
   border: 3px solid white;
-  outline: 1px solid #e9e5ef;
+  outline: 1px solid #edebe8;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 11px;
-  color: #8a71ad;
+  color: #9d9381;
   font-weight: 650;
 }
 .avatar span {
@@ -388,13 +387,13 @@ main {
   font-size: 9px;
   letter-spacing: 1.7px;
   font-weight: 600;
-  color: #a29aaf;
+  color: #aaa69f;
   margin-bottom: 10px;
 }
 h1 {
   font-size: 30px;
-  font-weight: 750;
-  letter-spacing: -1.25px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
   line-height: 1.3;
 }
 h1 > span {
@@ -408,15 +407,15 @@ h1 > span {
 .intro-doodle {
   font-size: 49px;
   line-height: 1;
-  color: #b8a9d7;
+  color: #c8c2b8;
   transform: rotate(9deg);
   margin-right: 9px;
   margin-top: 9px;
 }
 .hero {
-  background: #eee7f7;
-  border: 1px solid #e8e0f2;
-  border-radius: 14px;
+  background: #f1f0ed;
+  border: 1px solid #eceae6;
+  border-radius: 6px;
   min-height: 300px;
   display: flex;
   position: relative;
@@ -432,7 +431,7 @@ h1 > span {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #9582b2;
+  color: #a69d8e;
   font-size: 8px;
   letter-spacing: 1.25px;
   font-weight: 650;
@@ -446,12 +445,12 @@ h1 > span {
   letter-spacing: -1.2px;
   line-height: 1.22;
   margin-top: 12px;
-  color: #443655;
+  color: #4d483e;
 }
 .hero-copy > p {
   font-size: 11px;
   line-height: 1.9;
-  color: #93839f;
+  color: #98938a;
   margin-top: 12px;
 }
 .primary-button {
@@ -462,7 +461,7 @@ h1 > span {
   background: var(--purple);
   color: #fff;
   border: 1px solid var(--purple);
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 11px 17px;
   font-size: 11px;
   font-weight: 550;
@@ -472,7 +471,6 @@ h1 > span {
 }
 .primary-button:hover {
   background: var(--purple-dark);
-  transform: translateY(-1px);
 }
 .primary-button .icon {
   width: 15px;
@@ -486,7 +484,7 @@ h1 > span {
   align-items: center;
   gap: 5px;
   font-size: 8px;
-  color: #9c8aab;
+  color: #a39d92;
   margin-left: 13px;
 }
 .hero-note .icon {
@@ -514,7 +512,7 @@ h1 > span {
   bottom: 16px;
   font-size: 10px;
   letter-spacing: 0.1px;
-  color: #8b75a2;
+  color: #978e80;
   transform: rotate(-5deg);
   font-family: var(--heading);
   font-weight: 650;
@@ -539,7 +537,7 @@ h1 > span {
 .benefits .icon {
   height: 13px;
   width: 13px;
-  color: #a19aa9;
+  color: #a5a29e;
 }
 .benefits .benefits-last {
   margin-left: auto;
@@ -549,7 +547,7 @@ h1 > span {
 }
 .mini-brand {
   font-size: 16px;
-  color: #b1a0c8;
+  color: #bdb6ab;
 }
 .section-heading {
   display: flex;
@@ -569,10 +567,10 @@ h1 > span {
 }
 .view-controls {
   display: flex;
-  border: 1px solid #e8e6ed;
-  background: #fdfcfe;
+  border: 1px solid #ebeae8;
+  background: #fdfdfd;
   padding: 3px;
-  border-radius: 7px;
+  border-radius: 3px;
   gap: 3px;
 }
 .view-controls .icon-button {
@@ -581,7 +579,7 @@ h1 > span {
   border-radius: 4px;
 }
 .view-controls .icon-button.active {
-  background: #eee9f8;
+  background: #f2f1ef;
   color: var(--purple);
 }
 .view-controls .icon {
@@ -594,8 +592,8 @@ h1 > span {
 }
 .search-box {
   background: white;
-  border: 1px solid #e8e6ed;
-  border-radius: 8px;
+  border: 1px solid #ebeae8;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 11px;
@@ -605,13 +603,13 @@ h1 > span {
   transition: border-color 0.18s;
 }
 .search-box:focus-within {
-  border-color: #b6a5e5;
-  box-shadow: 0 0 0 3px #ede7fa66;
+  border-color: #ccc7be;
+  box-shadow: 0 0 0 3px #f2f1ef66;
 }
 .search-box > .icon {
   width: 16px;
   height: 16px;
-  color: #aaa5b3;
+  color: #b0ada8;
 }
 .search-box input {
   border: 0;
@@ -619,7 +617,7 @@ h1 > span {
   width: 100%;
   height: 100%;
   font-size: 11px;
-  color: #676173;
+  color: #6e6b66;
   outline: none;
   min-width: 0;
 }
@@ -633,14 +631,14 @@ h1 > span {
   flex: none;
   font: 8px var(--font);
   padding: 3px 5px;
-  color: #b4afbd;
-  border: 1px solid #eeecf2;
+  color: #bab7b2;
+  border: 1px solid #f1efed;
   border-radius: 4px;
 }
 .sort-button {
-  border: 1px solid #e8e6ed;
+  border: 1px solid #ebeae8;
   background: white;
-  border-radius: 8px;
+  border-radius: 4px;
   display: flex;
   gap: 9px;
   align-items: center;
@@ -672,9 +670,9 @@ h1 > span {
   color: #95909e;
   white-space: nowrap;
   padding: 8px 13px;
-  border: 1px solid #e8e6ed;
+  border: 1px solid #ebeae8;
   background: white;
-  border-radius: 6px;
+  border-radius: 3px;
   transition: 0.18s;
 }
 .filter-button .icon {
@@ -683,31 +681,31 @@ h1 > span {
 }
 .filter-button .filter-count {
   font-size: 8px;
-  color: #b1a9bc;
+  color: #b7b4ae;
   margin-left: 3px;
 }
 .filter-button:hover {
-  border-color: #d0c2ec;
+  border-color: #dcd8d2;
 }
 .filter-button.active {
   background: var(--purple-light);
-  border-color: #ddd2f4;
+  border-color: #e6e4e0;
   color: var(--purple);
 }
 .filter-button.active .filter-count {
-  color: #a18cc9;
+  color: #ba522c;
 }
 .results-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 9px;
-  color: #a8a2b0;
+  color: #acaaa6;
   margin: 0 1px 13px;
 }
 .results-heading > span:first-child {
   font-weight: 500;
-  color: #8e869a;
+  color: #95918b;
 }
 .tools-grid {
   display: grid;
@@ -716,8 +714,8 @@ h1 > span {
 }
 .tool-card {
   background: white;
-  border: 1px solid #eae8ef;
-  border-radius: 10px;
+  border: 1px solid #edecea;
+  border-radius: 4px;
   position: relative;
   min-height: 165px;
   padding: 20px 18px 16px;
@@ -729,18 +727,16 @@ h1 > span {
   flex-direction: column;
 }
 .tool-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px #33234308;
-  border-color: #d7c9ef;
+  border-color: #e0ddd8;
 }
 .card-open {
   position: absolute;
   inset: 0;
-  border-radius: 10px;
+  border-radius: 4px;
   z-index: 1;
 }
 .card-open:focus-visible {
-  outline: 3px solid #b4a3ed;
+  outline: 3px solid #cfcac1;
   outline-offset: 2px;
 }
 .card-top {
@@ -753,12 +749,13 @@ h1 > span {
 .tool-icon {
   width: 38px;
   height: 38px;
-  border-radius: 9px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--cat-bg);
   color: var(--cat-color);
+  border: 1px solid var(--line);
   flex: none;
 }
 .tool-icon > .icon {
@@ -785,8 +782,8 @@ h1 > span {
   font-size: 7px;
   border-radius: 4px;
   padding: 3px 5px;
-  color: #a18ec3;
-  background: #f6f1fc;
+  color: #b3ab9e;
+  background: #f8f7f5;
   letter-spacing: 0.2px;
   margin-left: auto;
 }
@@ -799,7 +796,7 @@ h1 > span {
   top: 20px;
   right: 14px;
   padding: 4px;
-  color: #d5cfdc;
+  color: #d9d6d2;
   z-index: 2;
   border-radius: 4px;
   opacity: 0;
@@ -833,7 +830,7 @@ h1 > span {
 .tool-card p {
   font-size: 9.5px;
   line-height: 1.75;
-  color: #a09aa9;
+  color: #a5a29e;
   max-width: 95%;
   pointer-events: none;
 }
@@ -847,16 +844,15 @@ h1 > span {
 }
 .card-category {
   font-size: 8px;
-  color: #bbb3c4;
+  color: #c0bdb7;
 }
 .card-footer > .icon {
   width: 13px;
   height: 13px;
-  color: #c1b8ce;
+  color: #c8c4be;
 }
 .tool-card:hover .card-footer > .icon {
   color: var(--purple);
-  transform: translateX(2px);
 }
 .show-more-wrap {
   display: flex;
@@ -869,16 +865,16 @@ h1 > span {
   justify-content: center;
   gap: 12px;
   padding: 10px 16px;
-  border: 1px solid #e3deec;
-  border-radius: 7px;
+  border: 1px solid #e8e6e2;
+  border-radius: 3px;
   background: white;
   font-size: 10px;
-  color: #8d809e;
+  color: #969188;
   transition: 0.18s;
 }
 .secondary-button:hover {
   background: var(--purple-light);
-  border-color: #d1c1ec;
+  border-color: #dcd8d1;
 }
 .secondary-button .icon {
   width: 13px;
@@ -891,7 +887,7 @@ h1 > span {
   background: #f0f2ef;
   border: 1px solid #e8ece5;
   padding: 22px 25px;
-  border-radius: 10px;
+  border-radius: 4px;
   position: relative;
   overflow: hidden;
 }
@@ -899,7 +895,7 @@ h1 > span {
   color: #91a28b;
   background: #e4eadd;
   padding: 12px;
-  border-radius: 11px;
+  border-radius: 5px;
 }
 .bottom-banner-icon .icon {
   width: 23px;
@@ -930,7 +926,7 @@ h1 > span {
   justify-content: space-between;
   margin: 25px 0 23px;
   font-size: 8px;
-  color: #b2acba;
+  color: #b6b4af;
 }
 .page-footer > div {
   display: flex;
@@ -939,13 +935,13 @@ h1 > span {
 }
 .page-footer button {
   font-size: 8px;
-  color: #a19aa9;
+  color: #a5a29e;
   padding: 0;
 }
 .footer-heart {
   font-size: 13px;
   vertical-align: middle;
-  color: #ad9cbd;
+  color: #b5afa4;
   margin-left: 3px;
 }
 .tools-grid.list-view {
@@ -978,20 +974,20 @@ h1 > span {
   justify-content: center;
   text-align: center;
   min-height: 220px;
-  border: 1px dashed #ded8e8;
-  border-radius: 10px;
-  color: #aaa0ba;
+  border: 1px dashed #e4e1dc;
+  border-radius: 4px;
+  color: #b3afa7;
   padding: 30px;
 }
 .empty-state > .icon {
   width: 35px;
   height: 35px;
   margin-bottom: 15px;
-  color: #bbabd7;
+  color: #c9c3b9;
 }
 .empty-state h3 {
   font-size: 15px;
-  color: #766a86;
+  color: #7f7a71;
   margin-bottom: 8px;
 }
 .empty-state p {
@@ -1014,18 +1010,18 @@ body.filtered .bottom-banner {
 }
 dialog {
   color: var(--ink);
-  border: 1px solid #e7e1ee;
-  box-shadow: 0 25px 100px #25203830;
+  border: 1px solid #eae8e5;
+  box-shadow: 0 25px 100px #322d2630;
   padding: 0;
 }
 dialog::backdrop {
-  background: #28213572;
+  background: #302c2672;
   backdrop-filter: blur(5px);
 }
 .tool-dialog {
   width: min(1050px, 94vw);
   max-height: 91dvh;
-  border-radius: 16px;
+  border-radius: 7px;
   margin: auto;
   overflow: hidden;
 }
@@ -1056,7 +1052,7 @@ dialog::backdrop {
 }
 .dialog-title-group p {
   font-size: 11px;
-  color: #9b92a6;
+  color: #a19d97;
   line-height: 1.6;
   margin-top: 3px;
 }
@@ -1064,7 +1060,7 @@ dialog::backdrop {
   padding: 27px;
   overflow-y: auto;
   min-height: 300px;
-  background: #faf9fc;
+  background: #fbfbfa;
 }
 .dialog-footer {
   display: flex;
@@ -1075,7 +1071,7 @@ dialog::backdrop {
   border-top: 1px solid var(--line);
   font-size: 10px;
   background: white;
-  color: #aaa0b5;
+  color: #b0aca5;
   flex: none;
 }
 .dialog-footer > span:first-child {
@@ -1094,9 +1090,9 @@ dialog::backdrop {
   font-size: 10px;
 }
 .dropzone {
-  border: 1.5px dashed #d9ccec;
-  border-radius: 12px;
-  background: #f5f1fc;
+  border: 1.5px dashed #e0ddd8;
+  border-radius: 5px;
+  background: #f8f7f5;
   min-height: 190px;
   display: flex;
   flex-direction: column;
@@ -1111,12 +1107,12 @@ dialog::backdrop {
 .dropzone:hover,
 .dropzone.dragover {
   border-color: var(--purple);
-  background: #eee7fa;
+  background: #f2f1ef;
 }
 .drop-icon {
-  background: #e8def8;
-  color: #987ac4;
-  border-radius: 12px;
+  background: #eeece9;
+  color: #ba522c;
+  border-radius: 5px;
   padding: 14px;
   margin-bottom: 14px;
 }
@@ -1127,7 +1123,7 @@ dialog::backdrop {
 .dropzone strong {
   font-size: 14px;
   font-weight: 600;
-  color: #78668d;
+  color: #837c70;
 }
 .dropzone strong span {
   color: var(--purple);
@@ -1135,7 +1131,7 @@ dialog::backdrop {
 .dropzone p {
   font-size: 11px;
   margin-top: 7px;
-  color: #aa9ab9;
+  color: #b1aca2;
   line-height: 1.8;
 }
 .dropzone input {
@@ -1158,11 +1154,11 @@ dialog::backdrop {
   align-items: center;
   background: white;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 11px 12px;
 }
 .file-row > .icon {
-  color: #b59acb;
+  color: #bcb5a9;
   width: 23px;
   height: 23px;
 }
@@ -1177,7 +1173,7 @@ dialog::backdrop {
 .file-size {
   font-size: 10px;
   margin-top: 3px;
-  color: #aaa0b4;
+  color: #afaba5;
 }
 .file-row-actions {
   display: flex;
@@ -1207,18 +1203,18 @@ dialog::backdrop {
   flex: 1;
   font-size: 11px;
   font-weight: 500;
-  color: #80728f;
+  color: #888279;
 }
 .field input,
 .field select,
 .field textarea,
 .control-input {
   width: 100%;
-  border: 1px solid #e1d9eb;
+  border: 1px solid #e6e3de;
   background: white;
-  color: #5d5169;
+  color: #635f57;
   padding: 10px 11px;
-  border-radius: 7px;
+  border-radius: 3px;
   min-height: 39px;
   min-width: 0;
 }
@@ -1244,7 +1240,7 @@ dialog::backdrop {
   gap: 7px;
   align-items: center;
   font-size: 11px;
-  color: #8b7b9b;
+  color: #938d83;
   white-space: nowrap;
   min-height: 39px;
 }
@@ -1267,7 +1263,7 @@ dialog::backdrop {
 }
 .tool-hint {
   font-size: 11px;
-  color: #a295ad;
+  color: #a7a39b;
   line-height: 1.8;
   margin-top: 14px;
 }
@@ -1276,7 +1272,7 @@ dialog::backdrop {
   font-size: 12px;
   background: #fcf0f0;
   padding: 12px 14px;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid #f0d5d8;
   margin-top: 15px;
   line-height: 1.7;
@@ -1286,7 +1282,7 @@ dialog::backdrop {
   color: #7b987e;
   padding: 13px 16px;
   border: 1px solid #dfebdf;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-top: 16px;
   font-size: 12px;
   line-height: 1.7;
@@ -1312,11 +1308,11 @@ dialog::backdrop {
   width: 100%;
   min-height: 245px;
   resize: vertical;
-  border: 1px solid #e1d9eb;
+  border: 1px solid #e6e3de;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 4px;
   font: 12px/1.8 var(--font);
-  color: #746280;
+  color: #78736a;
   background: white;
 }
 .code-input {
@@ -1327,7 +1323,7 @@ dialog::backdrop {
 .field-title {
   font-size: 11px;
   font-weight: 600;
-  color: #857691;
+  color: #8a857d;
   margin-bottom: 9px;
   display: flex;
   justify-content: space-between;
@@ -1342,7 +1338,7 @@ dialog::backdrop {
 .stat {
   background: white;
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: 4px;
   text-align: center;
   padding: 18px 10px;
 }
@@ -1350,13 +1346,13 @@ dialog::backdrop {
   display: block;
   font-family: var(--heading);
   font-size: 25px;
-  color: #877099;
+  color: #8f877a;
   letter-spacing: -1px;
 }
 .stat span {
   display: block;
   font-size: 10px;
-  color: #a395af;
+  color: #a8a49c;
   margin-top: 4px;
 }
 .image-preview {
@@ -1366,9 +1362,9 @@ dialog::backdrop {
   min-height: 200px;
   max-height: 430px;
   overflow: auto;
-  border: 1px solid #e3dce9;
-  border-radius: 10px;
-  background: repeating-conic-gradient(#f0edf3 0 25%, #faf8fc 0 50%) 0/16px 16px;
+  border: 1px solid #e6e3df;
+  border-radius: 4px;
+  background: repeating-conic-gradient(#f2f0ee 0 25%, #fbfaf9 0 50%) 0/16px 16px;
   margin-top: 20px;
   padding: 20px;
 }
@@ -1377,7 +1373,7 @@ dialog::backdrop {
   max-width: 100%;
   max-height: 380px;
   object-fit: contain;
-  box-shadow: 0 4px 15px #30204018;
+  box-shadow: 0 4px 15px #36322a18;
 }
 .image-preview:empty {
   display: none;
@@ -1389,7 +1385,7 @@ dialog::backdrop {
 }
 .image-meta {
   font-size: 10px;
-  color: #9a8aa7;
+  color: #a09a91;
   text-align: center;
   margin-top: 9px;
 }
@@ -1400,24 +1396,24 @@ dialog::backdrop {
   flex-wrap: wrap;
   background: white;
   border: 1px solid var(--line);
-  border-radius: 8px 8px 0 0;
+  border-radius: 4px 8px 0 0;
   padding: 8px;
 }
 .editor-toolbar select {
   padding: 7px;
-  border: 1px solid #e7e0ef;
-  border-radius: 5px;
+  border: 1px solid #eae8e5;
+  border-radius: 2px;
   font-size: 11px;
-  color: #8a759b;
+  color: #928b7e;
 }
 .toolbar-button {
-  border: 1px solid #e7e0ef;
-  border-radius: 5px;
+  border: 1px solid #eae8e5;
+  border-radius: 2px;
   min-width: 30px;
   height: 30px;
   padding: 6px 8px;
   font-size: 12px;
-  color: #8a759b;
+  color: #928b7e;
 }
 .toolbar-button .icon {
   width: 15px;
@@ -1443,11 +1439,11 @@ dialog::backdrop {
   border-radius: 0 0 8px 8px;
   font-size: 14px;
   line-height: 1.9;
-  color: #54485e;
+  color: #58544e;
 }
 .document-editor:empty:before {
   content: attr(data-placeholder);
-  color: #b8a9c3;
+  color: #bcb8b0;
   pointer-events: none;
 }
 .document-editor h1 {
@@ -1505,7 +1501,7 @@ dialog::backdrop {
   max-width: 100%;
   margin: auto;
   line-height: 0;
-  box-shadow: 0 3px 13px #30204015;
+  box-shadow: 0 3px 13px #36322a15;
   cursor: crosshair;
 }
 .pdf-stage canvas {
@@ -1522,9 +1518,9 @@ dialog::backdrop {
   transform-origin: top left;
 }
 .pdf-outer {
-  background: #eae5ef;
+  background: #edebe8;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: auto;
   max-height: 520px;
 }
@@ -1543,7 +1539,7 @@ dialog::backdrop {
   font-size: 10px;
   background: white;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 5px 7px;
 }
 .annotation-item > span {
@@ -1554,7 +1550,7 @@ dialog::backdrop {
 .annotation-item button {
   flex: none;
   font-size: 16px;
-  color: #b097c2;
+  color: #b7afa2;
 }
 .qr-output {
   display: flex;
@@ -1562,7 +1558,7 @@ dialog::backdrop {
   justify-content: center;
   background: white;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 4px;
   min-height: 260px;
   padding: 24px;
 }
@@ -1578,15 +1574,15 @@ dialog::backdrop {
   gap: 12px;
   padding: 23px;
   background: white;
-  border: 1px solid #e3daed;
-  border-radius: 9px;
+  border: 1px solid #e7e4e0;
+  border-radius: 4px;
   margin-bottom: 20px;
 }
 .password-output code {
   font:
     20px Consolas,
     monospace;
-  color: #897196;
+  color: #8d867a;
   overflow-wrap: anywhere;
   line-height: 1.6;
 }
@@ -1598,13 +1594,13 @@ dialog::backdrop {
 }
 .unit-equals {
   font-size: 24px;
-  color: #bba9c8;
+  color: #c0bbb1;
   align-self: center;
   padding-top: 16px;
 }
 .color-swatch {
   min-height: 220px;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -1612,20 +1608,20 @@ dialog::backdrop {
 }
 .color-swatch span {
   background: white;
-  color: #6e5e7d;
+  color: #757066;
   font-size: 15px;
   letter-spacing: 1px;
-  border-radius: 30px;
+  border-radius: 14px;
   padding: 9px 20px;
   font-family: Consolas, monospace;
   box-shadow: 0 2px 15px #0001;
 }
 .info-dialog {
   width: min(490px, 90vw);
-  border-radius: 16px;
+  border-radius: 7px;
   padding: 35px;
   margin: auto;
-  background: #fdfbff;
+  background: #fdfdfd;
 }
 .info-close {
   position: absolute;
@@ -1634,7 +1630,7 @@ dialog::backdrop {
 }
 .info-symbol {
   font-size: 35px;
-  color: #a389c5;
+  color: #b2aa9c;
   margin-bottom: 16px;
 }
 .info-dialog h2 {
@@ -1645,15 +1641,15 @@ dialog::backdrop {
 .info-dialog p {
   font-size: 13px;
   line-height: 1.9;
-  color: #96829f;
+  color: #989289;
   margin-bottom: 13px;
 }
 .info-dialog strong {
   font-weight: 600;
-  color: #7b668a;
+  color: #817a6f;
 }
 .info-dialog .info-detail {
-  border-top: 1px solid #e9e1f0;
+  border-top: 1px solid #ebe9e6;
   padding-top: 15px;
   margin-top: 18px;
   font-size: 11px;
@@ -1663,11 +1659,11 @@ dialog::backdrop {
   bottom: 25px;
   left: 50%;
   transform: translate(-50%, 15px);
-  background: #524560;
+  background: #59544c;
   color: white;
   padding: 12px 22px;
-  border-radius: 9px;
-  box-shadow: 0 5px 25px #30204020;
+  border-radius: 4px;
+  box-shadow: 0 5px 25px #36322a20;
   z-index: 100;
   font-size: 12px;
   opacity: 0;
@@ -1901,7 +1897,7 @@ dialog::backdrop {
     display: block;
     position: fixed;
     inset: 0;
-    background: #28213560;
+    background: #302c2660;
     z-index: 19;
   }
   .app-shell {
@@ -1954,7 +1950,7 @@ dialog::backdrop {
   }
   .hero {
     min-height: 287px;
-    border-radius: 12px;
+    border-radius: 5px;
   }
   .hero-copy {
     padding: 26px 22px;
@@ -2087,12 +2083,12 @@ dialog::backdrop {
   .tool-card {
     padding: 16px 14px 13px;
     min-height: 172px;
-    border-radius: 9px;
+    border-radius: 4px;
   }
   .tool-icon {
     width: 34px;
     height: 34px;
-    border-radius: 8px;
+    border-radius: 4px;
   }
   .tool-icon > .icon {
     width: 18px;
@@ -2139,7 +2135,7 @@ dialog::backdrop {
   }
   .bottom-banner-icon {
     padding: 9px;
-    border-radius: 9px;
+    border-radius: 4px;
   }
   .bottom-banner-icon .icon {
     width: 19px;
@@ -2179,7 +2175,7 @@ dialog::backdrop {
   .tool-dialog {
     width: 96vw;
     max-height: 94dvh;
-    border-radius: 12px;
+    border-radius: 5px;
   }
   .dialog-header {
     padding: 18px 16px;
@@ -2282,46 +2278,46 @@ dialog::backdrop {
   }
 }
 .tool-card p {
-  color: #82788d;
+  color: #88847d;
   font-size: 10.5px;
 }
 .card-category {
-  color: #9b90a8;
+  color: #a29e96;
 }
 .hero-copy > p {
-  color: #85718f;
+  color: #888278;
 }
 .page-intro p,
 .section-heading p {
-  color: #867d91;
+  color: #8c8882;
 }
 .search-box input::placeholder {
-  color: #91859f;
+  color: #98948b;
 }
 .filter-button {
-  color: #84758f;
+  color: #88847b;
 }
 .results-heading > span:first-child {
-  color: #81728f;
+  color: #888279;
 }
 .tool-hint {
-  color: #887395;
+  color: #8c867c;
 }
 .file-size,
 .image-meta {
-  color: #907d9f;
+  color: #969086;
 }
 .dialog-title-group p {
-  color: #8c789c;
+  color: #938c81;
 }
 .info-dialog p {
-  color: #836b8f;
+  color: #867f74;
 }
 .field {
-  color: #7c638d;
+  color: #827b6e;
 }
 .dropzone p {
-  color: #907aa4;
+  color: #9a9284;
 }
 .bottom-banner p {
   color: #87947f;
@@ -2347,4 +2343,31 @@ dialog::backdrop {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* Plain, content-first intro (replaces the illustrated hero) */
+.page-intro {
+  display: block;
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+.page-intro h1 {
+  font-size: 32px;
+}
+.page-intro p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.page-intro .intro-note {
+  font-size: 12.5px;
+  margin-top: 10px;
+}
+.tool-card p {
+  color: var(--muted);
+  font-size: 11px;
+}
+.tool-card h3 {
+  font-family: var(--font);
+  font-weight: 650;
 }
