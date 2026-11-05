@@ -55,10 +55,15 @@ test("Pages subpath serves the app, lazy libraries, PDF worker, and font", async
   const response = await fetch(page);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /<title>Handy: PDF, image and text tools/);
-  const assets = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)].map(
-    (match) => match[1],
-  );
+  assert.match(html, /<title>Handy – free online PDF, image and text tools/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/rchalasani93\.github\.io\/handyman\/"/);
+  const sitemap = await fetch(new URL("sitemap.xml", page));
+  assert.equal(sitemap.status, 200);
+  assert.match(await sitemap.text(), /<loc>https:\/\/rchalasani93\.github\.io\/handyman\/<\/loc>/);
+  // Absolute URLs (the canonical link) point at the live site, not at bundled assets.
+  const assets = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)]
+    .map((match) => match[1])
+    .filter((asset) => !/^https?:/.test(asset));
   assets.push(
     "tools.js",
     "icons.js",
